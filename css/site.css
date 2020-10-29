@@ -1,0 +1,135 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Google Sans';
+}
+
+header {
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    background-image: url('/img/header_bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 70%;
+    background-size: cover;
+    color: #eee;
+}
+
+header h1 {
+    font-size: 2.25rem;
+}
+
+header h2 {
+    font-weight: normal;
+}
+
+header h1, header h2, header p {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+header a, header a:visited {
+    color: #ccc;
+    transition: .25s ease;
+}
+
+header a:hover, header a:focus {
+    color: #fff;
+}
+
+footer {
+    background-color: #181818;
+    padding: 4rem;
+    color: #aaa;
+}
+
+footer .button-list {
+    text-align: center;
+}
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.work-item {
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden;
+    margin: .25rem;
+}
+
+.work-content {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    filter: grayscale(100%);
+    transition: all .5s ease;
+}
+
+.work-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    transition: .5s ease;
+    background-color: rgba(0, 182, 189, 0.75);
+}
+
+.work-item:hover .work-content, .work-item:focus .work-content {
+    filter: grayscale(0);
+    background-size: 110%;
+}
+
+.work-item:hover .work-text {
+    opacity: 100%;
+}
+
+.work-text h2 {
+    margin: 0 1rem 1rem 1rem;
+}
+
+.work-text p {
+    margin: 0 1rem;
+}
+
+.btn {
+    display: inline-block;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: .75rem 1rem;
+    margin: .25rem .5rem .25rem 0;
+    transition: .25s ease
+}
+
+.btn:hover {
+    color: #eee;
+    background-color: transparent;
+}
+
+@media (min-width:576px) {
+    header h1 {
+        font-size: 4rem;
+    }    
+
+    footer .button-list {
+        text-align: left;
+    }
+}
