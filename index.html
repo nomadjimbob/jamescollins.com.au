@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>James Collins</title>
     
@@ -5,73 +7,136 @@
     <meta name="description" content="I'm James Collins, a web/tool programmer" />
     <meta name="keywords" content="jamescollins, james collins, nomadjimbob, nomad jimbob, minecraft, drustcraft, nao, nao cadet" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L26WMQLL04"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
     
-    <link rel="stylesheet" href="css/fonts/GoogleSans/stylesheet.css" />
+      gtag('config', 'G-L26WMQLL04');
+    </script>    
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="css/fonts/FontAwesome/stylesheet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/site.css" />
         
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
 </head>
 <body>
-    <header>
-        <h1>Hey, I'm James!</h1>
-        <h2>I develop software and STEM based activities</h2>
-        <br>
-        <p>I have a background in programming games, the web, and mobile apps. I'm familiar with Unity, and a range of languages.</p>
-        <p>Most of my work can be found on my <a href="https://github.com/nomadjimbob">GitHub</a> page, or through links below.</p>
-    </header>
-    <section class="work-list">
+    <div class="wrapper">
+        <header>
+            <h1>James Collins</h1>
+            <p>I push blocks in Minecraft, develop software and work on STEM activities</p>
+            <p>
+                <a href="http://twitter.com/nomadjimbob" class="button" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/nomadjimbob" class="button" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="http://github.com/nomadjimbob" class="button" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:james.collins@outlook.com.au" class="button" title="Email" target="_blank"><i class="fa fa-envelope"></i></a>
+            </p>
+            <p class="support">If you like my work, please consider supporting me. ❤︎</p>
+            <script src='https://ko-fi.com/widgets/widget_2.js'></script><script>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'I2I01RMHL');kofiwidget2.draw();</script>
+        </header>
+        <div class="page">
+            <h1>DokuWiki</h1>
+            <section id="mikio">
+                <div class="row">
+                    <div class="info">
+                        <h2>Mikio Docuwiki Theme</h2>
+                        <p>A responsive, bootstrap inspired theme for DokuWiki with a ton of options and features</p>
+                        <a href="https://www.dokuwiki.org/template:mikio" class="button">View</a>
+                    </div>
+                    <div class="image" style="background-image:url('/img/mikio.jpg');"></div>
+                </div>
+            </section>
+            
+            <h1>Minecraft</h1>
+            <section id="mcpediscordrelay">
+                <div class="row">
+                    <div class="info">
+                        <h2>MCPE Discord Relay</h2>
+                        <p>A plugin for Minecraft Pocket servers to pipe the log to a Discord channel</p>
+                        <a href="https://poggit.pmmp.io/p/MCPEDiscordRelay/" class="button">View</a>
+                    </div>
+                    <div class="image" style="background-image:url('/img/mcpediscordrelay.jpg');"></div>
+                </div>
+            </section>
+            <section id="rlcraft">
+                <div class="row">
+                    <div class="info">
+                        <h2>RLCraft Remastered</h2>
+                        <p><a href="/downloads/rlcraft-remastered-v1.1.1.zip">Download the complete modpack</a> without the need for Curseforge.</p>
+                        <a href="/" class="button" data-expand="rlcraft">Read More</a> <a href="https://www.curseforge.com/minecraft/modpacks/rlcraft-remastered" target="_blank" class="button">Visit RLCraft Remastered</a>
+                    </div>
+                    <div class="image" style="background-image:url('/img/rlcraft-hero.jpg');"></div>
+                </div>
+                <div class="row expand">
+                    <h3>Install Instructions</h3>
+                    <ul>
+                        <li>Download the above modpack</li>
+                        <li>Unzip it and place the <code>rlcraft</code> directory in <code>%appdata%\.minecraft</code> in Windows or <code>~\Library\Application Support\</code> folder on Mac (Cmd+Shift+G)</li>
+                        <li>Download and run the <a href="http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12.2.html" target="_blank">Forge 1.12.2 installer</a> (you will need to add any previous Forge Minecraft profiles)</li>
+                        <li>Open Minecraft and Edit the Forge 1.12.2 profile, change the Game Directory to the directory above, click More Options and make sure that in JVM Arguments, you have <code>-Xmx4G</code> and not any other -Xmx value</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="drustcraft">
+                <div class="row">
+                    <div class="info">
+                        <h2>Drustcraft</h2>
+                        <p>The ultimate Role-playing Minecraft server</p>
+                        <a href="https://drustcraft.com.au/" class="button">Visit</a>
+                    </div>
+                    <div class="image" style="background-image:url('/img/drustcraft.jpg');"></div>
+                </div>
+            </section>
+            
+            <h1>WordPress</h1>
+            <section id="wp_woocommerce">
+                <div class="row">
+                    <div class="info">
+                        <h2>WooCommerce Extensions</h2>
+                        <p>Various WordPress plugins that extend or add functionality to the WooCommerce plugin</p>
+                        <ul>
+                            <li><a href="https://wordpress.org/plugins/show-free-for-woocommerce/">Show 'Free' for WooCommerce</a> - Displays 'Free' instead of $0.00 in pricing</li>
+                            <li><a href="https://wordpress.org/plugins/show-descriptions-for-woocommerce/">Show descriptions for WooCommerce</a> - Displays product descriptions in product archive views</li>
+                        </ul>
+                    </div>
+                    <div class="image" style="background-image:url('/img/show-free-woocommerce.png');"></div>
+                </div>
+            </section>
 
-        <!-- Drustcraft -->
-        <div class="work-item">
-            <div class="work-content" style="background-image:url('img/drustcraft.jpg');">
-                <a href="https://github.com/nomadjimbob/Drustcraft" class="work-text">
-                    <h2>Drustcrust</h2>
-                    <p>A role playing Minecraft engine that supports organizational events and transferring block states in and out of the game</p>
-                </a>
-            </div>
+            <section id="wp_tablepress">
+                <div class="row">
+                    <div class="info">
+                        <h2>TablePress Extensions</h2>
+                        <p>Various WordPress plugins that extend or add functionality to the TablePress plugin</p>
+                        <ul>
+                            <li><a href="https://wordpress.org/plugins/indiv-for-tablepress/">inDiv for TablePress</a> - Custom Extension for TablePress to automatically wrap the table in a DIV element</li>
+                        </ul>
+                    </div>
+                    <div class="image" style="background-image:url('/img/indiv-tablepress.png');"></div>
+                </div>
+            </section>
+
+            <h1>NAO</h1>
+            <section id="naocadet">
+                <div class="row">
+                    <div class="info">
+                        <h2>NAO Cadet</h2>
+                        <p>NAO Cadet is a visual drag-and-drop programming tool that allows children to connect blocks together to code an NAO robot</p>
+                        <a href="https://github.com/nomadjimbob/NAO-Cadet" class="button">GitHub</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.slq.naocadet&hl=en&gl=US" class="button">Google Play</a>
+                        <a href="https://apps.apple.com/nz/app/nao-cadet/id1398109045" class="button">Apple App Store</a>
+                    </div>
+                    <div class="image" style="background-image:url('/img/naocadet.jpg');"></div>
+                </div>
+            </section>
         </div>
-
-        <!-- Mikio -->
-        <div class="work-item">
-            <div class="work-content" style="background-image:url('img/mikio.jpg');">
-                <a href="https://github.com/nomadjimbob/mikio" class="work-text">
-                    <h2>Mikio</h2>
-                    <p>A responsive, bootstrap inspired theme for DokuWiki with a ton of options and features</p>
-                </a>
-            </div>
-        </div>
-
-        <!-- MCPEDiscordRelay -->
-        <div class="work-item">
-            <div class="work-content" style="background-image:url('img/mcpediscordrelay.jpg');">
-                <a href="https://github.com/nomadjimbob/MCPEDiscordRelay" class="work-text">
-                    <h2>MCPE Discord Relay</h2>
-                    <p>A plugin for Minecraft Pocket servers to pipe the log to a Discord channel</p>
-                </a>
-            </div>
-        </div>
-
-        <!-- NAOCadet -->
-        <div class="work-item">
-            <div class="work-content" style="background-image:url('img/naocadet.jpg');">
-                <a href="https://github.com/nomadjimbob/NAO-Cadet" class="work-text">
-                    <h2>NAO Cadet</h2>
-                    <p>NAO Cadet is a visual drag-and-drop programming tool that allows children to connect blocks together to code an NAO robot</p>
-                </a>
-            </div>
-        </div>
-
-    </section>
-    <footer>
-        <h2>Get in Touch</h2>
-        <p>Got a project you would like me to work on? Or how about just a friendly chat? Give me an email and we can grab a lovely brew.</p>
-        <p class="button-list">
-            <a href="http://twitter.com/nomadjimbob" class="btn" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/nomadjimbob" class="btn" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="http://github.com/nomadjimbob" class="btn" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:james.collins@outlook.com.au" class="btn" title="Email" target="_blank"><i class="fa fa-envelope"></i></a>
-        </p>
-        <small>Copyright &copy; 2020, James Collins</small>
-    </footer>
+    </div>
+    <div class="wrapper">
+        <footer>Copyright &copy; 2021, James Collins</footer>
+    </div>
+    <script src="/js/script.js"></script>
 </body>
